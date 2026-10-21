@@ -1,0 +1,13 @@
+name: app-taschenrechner
+version: 0.1.0
+type: app
+description: Programmierbarer Taschenrechner mit lernenden Kacheln (Demo-App von AIbex AIOS)
+requires:
+  aios: ">=0.4,<0.5"
+depends:
+  skill-memo: "~=6.0"
+contents:
+  skills: [taschenrechner, taschenrechner-gui]
+  knowledge: true
+  gui: taschenrechner-gui
+license: MIT
