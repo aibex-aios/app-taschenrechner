@@ -24,7 +24,7 @@
 <script>
 (function () {
   // RPN after the HP-15C: stack X, Y, Z, T with stack lift (V0.4, memo 51)
-  var saved = {{aios-data kacheln.yaml}};
+  var saved = {{aios-data funktionstasten.yaml}};
   var tiles = (saved && typeof saved === "object") ? saved : {};
   var xEl = document.getElementById("tr-x"), yEl = document.getElementById("tr-y");
   var state = document.getElementById("tr-state"), learnBtn = document.getElementById("tr-learn");
@@ -64,7 +64,7 @@
   function status() {
     var names = Object.keys(tiles).filter(function (t) { return tiles[t] && tiles[t].keys; });
     if (learning) state.textContent = "Aufnahme: " + recorded.join(" ");
-    else if (pending) state.textContent = "Kachel wählen für: " + pending.join(" ");
+    else if (pending) state.textContent = "Funktionstaste wählen für: " + pending.join(" ");
     else state.textContent = names.length ? "Belegt: " + names.map(function (t) { return t + " " + (tiles[t].title || ""); }).join(", ") : "";
     learnBtn.classList.toggle("on", learning);
     document.querySelectorAll(".tr button[data-k]").forEach(function (b) {
@@ -85,7 +85,7 @@
       var name = b.dataset.k;
       if (pending) {
         tiles[name] = { title: pending.join(" "), keys: pending };
-        var msg = "Run the skill /taschenrechner. Speichere die Kachel " + name + " mit den Tasten " +
+        var msg = "Run the skill /taschenrechner. Speichere die Funktionstaste " + name + " mit den Tasten " +
                   JSON.stringify(pending) + " und dem Titel \"" + pending.join(" ") + "\".";
         pending = null; status();
         if (typeof sendPrompt === "function") sendPrompt(msg);
