@@ -2,7 +2,7 @@ title: Taschenrechner
 intro: Rechnen in umgekehrter polnischer Notation (ENTER wie beim HP-15C), mit Lernen eine Tastenfolge auf eine Kachel legen.
 tiles:
   - title: Rechner
-    text: Stack X, Y, Z, T; ENTER, CHS und die Kacheln K1 bis K4
+    text: Stack X, Y, Z, T; ENTER, CHS und die Kacheln A bis D
     html: rechner.html
     icon: calculator
   - title: Kacheln anzeigen
