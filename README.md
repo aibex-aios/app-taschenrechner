@@ -1,6 +1,6 @@
 # app-taschenrechner
 
-Demo-App von AIbex AIOS: programmierbarer Taschenrechner mit Ziffern, Punkt, Grundrechenarten, `=`, `C`, vier Kacheln und der Taste *Lernen*. Mit *Lernen* nimmt der Rechner eine Tastenfolge auf; die nächste gedrückte Kachel übernimmt sie, und Claude speichert sie mit dem Skill `taschenrechner` in `@Data/app-taschenrechner/kacheln.yaml`.
+Demo-App von AIbex AIOS: programmierbarer Taschenrechner mit umgekehrter polnischer Notation nach dem Vorbild des HP-15C (Stack X, Y, Z, T): Ziffern, Punkt, Grundrechenarten, `CHS`, `ENTER`, vier Kacheln und die Taste *Lernen*. Ein Quadrat ist `ENTER ×`. Mit *Lernen* nimmt der Rechner eine Tastenfolge auf; die nächste gedrückte Kachel übernimmt sie, und Claude speichert sie mit dem Skill `taschenrechner` in `@Data/app-taschenrechner/kacheln.yaml`.
 
 ```bash
 aios --fetch app-taschenrechner
