@@ -1,6 +1,6 @@
 ---
 name: taschenrechner
-version: 0.4.2
+version: 0.5.0
 description: >
   Funktionstasten des programmierbaren Taschenrechners von AIbex AIOS speichern, anzeigen und
   übernehmen: Belegungen aus der Oberfläche in @Data/app-taschenrechner/funktionstasten.yaml

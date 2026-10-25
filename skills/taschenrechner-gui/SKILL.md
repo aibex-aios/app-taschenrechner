@@ -1,6 +1,6 @@
 ---
 name: taschenrechner-gui
-version: 0.4.2
+version: 0.5.0
 description: >
   Oberfläche des programmierbaren RPN-Taschenrechners von AIbex AIOS (nach dem Vorbild
   des HP-15C): Ziffern, Grundrechenarten, CHS, ENTER, vier belegbare Funktionstasten A bis D und LEARN. Verwenden bei
